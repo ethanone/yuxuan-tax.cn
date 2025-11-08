@@ -301,25 +301,25 @@ const AboutSection = memo(() => (
         <h2 className="text-3xl md:text-5xl font-bold mb-6">
           专注<span className="gradient-text">AI技术深度应用</span>
         </h2>
-        <div className="space-y-6 text-gray-800 leading-relaxed text-left text-lg font-medium">
+        <div className="space-y-6 text-gray-800 leading-relaxed text-left text-xl font-medium">
           {companyData.aboutUs.intro.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
         
-        <div className="mt-8 space-y-4">
-          <div className="flex items-start space-x-3 text-left">
-            <CheckCircle2 className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+        <div className="mt-10 space-y-6">
+          <div className="flex items-start space-x-4 text-left">
+            <CheckCircle2 className="w-7 h-7 text-purple-600 flex-shrink-0 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-900 mb-1">核心目标</h4>
-              <p className="text-gray-800 font-medium">{companyData.aboutUs.mission}</p>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">核心目标</h4>
+              <p className="text-gray-800 font-medium text-base leading-relaxed">{companyData.aboutUs.mission}</p>
             </div>
           </div>
-          <div className="flex items-start space-x-3 text-left">
-            <Target className="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" />
+          <div className="flex items-start space-x-4 text-left">
+            <Target className="w-7 h-7 text-pink-600 flex-shrink-0 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-900 mb-1">企业愿景</h4>
-              <p className="text-gray-800 font-medium">{companyData.aboutUs.vision}</p>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">企业愿景</h4>
+              <p className="text-gray-800 font-medium text-base leading-relaxed">{companyData.aboutUs.vision}</p>
             </div>
           </div>
         </div>
@@ -362,10 +362,10 @@ const AdvantagesSection = memo(() => (
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-800 leading-relaxed mb-4 font-medium">{advantage.description}</p>
+                <p className="text-gray-800 leading-relaxed mb-6 font-medium text-base">{advantage.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {advantage.highlights.map((highlight, idx) => (
-                    <Badge key={idx} variant="secondary" className="bg-purple-100 text-purple-700 hover:bg-purple-200">
+                    <Badge key={idx} variant="secondary" className="bg-purple-100 text-purple-700 hover:bg-purple-200 text-sm font-medium">
                       {highlight}
                     </Badge>
                   ))}
@@ -411,17 +411,17 @@ const TeamSection = memo(() => (
                 {/* 旋转光环 */}
                 <div className="absolute inset-0 rounded-full border-2 border-purple-400/30 opacity-0 group-hover:opacity-100 transition-opacity animate-spin-slow" />
               </div>
-              <CardTitle className="text-xl font-bold">{member.name}</CardTitle>
-              <CardDescription className="text-purple-600 font-semibold">
+              <CardTitle className="text-2xl font-bold mb-2">{member.name}</CardTitle>
+              <CardDescription className="text-purple-600 font-bold text-base">
                 {member.title}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-600 mb-3">{member.education}</p>
-              <p className="text-sm text-gray-500 mb-4">{member.background}</p>
+              <p className="text-base text-gray-700 mb-3 font-medium">{member.education}</p>
+              <p className="text-sm text-gray-600 mb-4 leading-relaxed font-medium">{member.background}</p>
               <div className="flex flex-wrap gap-2 justify-center">
                 {member.expertise.slice(0, 3).map((skill, idx) => (
-                  <Badge key={idx} variant="outline" className="text-xs">
+                  <Badge key={idx} variant="outline" className="text-sm font-medium">
                     {skill}
                   </Badge>
                 ))}
@@ -471,32 +471,32 @@ const CaseStudiesSection = memo(() => (
               <CardHeader>
                 <div className="flex items-start space-x-4">
                   <div 
-                    className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0"
+                    className="w-14 h-14 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0"
                     style={{ backgroundColor: `${caseStudy.color}20` }}
                   >
-                    <Icon className="w-6 h-6" style={{ color: caseStudy.color }} />
+                    <Icon className="w-7 h-7" style={{ color: caseStudy.color }} />
                   </div>
                   <div className="flex-1">
-                    <Badge className="mb-2" style={{ backgroundColor: caseStudy.color, color: 'white' }}>
+                    <Badge className="mb-3 text-sm font-semibold" style={{ backgroundColor: caseStudy.color, color: 'white' }}>
                       {caseStudy.category}
                     </Badge>
-                    <CardTitle className="text-xl font-bold mb-2">
+                    <CardTitle className="text-2xl font-bold mb-3">
                       {caseStudy.title}
                     </CardTitle>
-                    <CardDescription className="text-gray-600">
+                    <CardDescription className="text-gray-700 text-base font-medium">
                       {caseStudy.subtitle}
                     </CardDescription>
                   </div>
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-5">
                 {/* Technologies */}
                 <div>
-                  <h4 className="font-semibold text-sm text-gray-700 mb-2">核心技术</h4>
+                  <h4 className="font-bold text-base text-gray-900 mb-3">核心技术</h4>
                   <div className="flex flex-wrap gap-2">
                     {caseStudy.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs">
+                      <Badge key={idx} variant="outline" className="text-sm font-medium">
                         {tech}
                       </Badge>
                     ))}
@@ -505,23 +505,23 @@ const CaseStudiesSection = memo(() => (
 
                 {/* Pain Point (if exists) */}
                 {caseStudy.painPoint && (
-                  <div className="bg-red-50 border border-red-200 rounded-lg p-3">
-                    <p className="text-sm text-red-800">
-                      <strong>痛点：</strong>{caseStudy.painPoint}
+                  <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4">
+                    <p className="text-base text-red-800 font-medium leading-relaxed">
+                      <strong className="font-bold">痛点：</strong>{caseStudy.painPoint}
                     </p>
                   </div>
                 )}
 
                 {/* Features */}
                 <div>
-                  <h4 className="font-semibold text-sm text-gray-700 mb-2">核心功能</h4>
+                  <h4 className="font-bold text-base text-gray-900 mb-3">核心功能</h4>
                   <Accordion type="single" collapsible>
                     {caseStudy.features.map((feature, idx) => (
                       <AccordionItem key={idx} value={`feature-${idx}`}>
-                        <AccordionTrigger className="text-sm">
+                        <AccordionTrigger className="text-base font-semibold">
                           {feature.name}
                         </AccordionTrigger>
-                        <AccordionContent className="text-sm text-gray-600">
+                        <AccordionContent className="text-base text-gray-700 leading-relaxed font-medium">
                           {feature.description}
                         </AccordionContent>
                       </AccordionItem>
@@ -530,12 +530,12 @@ const CaseStudiesSection = memo(() => (
                 </div>
 
                 {/* Outcome */}
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <div className="bg-green-50 border-2 border-green-200 rounded-lg p-5">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold text-sm text-green-800 mb-1">项目成果</h4>
-                      <p className="text-sm text-green-700">{caseStudy.outcome}</p>
+                      <h4 className="font-bold text-base text-green-800 mb-2">项目成果</h4>
+                      <p className="text-base text-green-700 leading-relaxed font-medium">{caseStudy.outcome}</p>
                     </div>
                   </div>
                 </div>
