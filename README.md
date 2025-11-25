@@ -1,265 +1,178 @@
-# 新石龙科技官网 | New Shi Long Technology Official Website
+# 四川省煜轩财税咨询有限公司官网
 
-<div align="center">
+> 以“财税 + 智能”双引擎，帮助企业把控风险、释放资金效率
 
-![New Shi Long Tech](public/scxsl-logo.png)
-
-**自然珍品，重塑于诚信与科技**  
-*Natural Excellence, Redefined by Integrity & Technology*
-
-[![Next.js](https://img.shields.io/badge/Next.js-15.3.5-black?logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.0-blue?logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-
-[🌐 在线预览](https://scxingshilong.com) | [📧 联系我们](mailto:uj.zhou@foxmail.com)
-
-</div>
+![Next.js](https://img.shields.io/badge/Next.js-15.3.5-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19.0.0-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-8B5CF6?logo=tailwindcss)
 
 ---
 
-## 📖 关于 | About
+## 📚 快速导航
 
-四川新石龙科技有限公司是一家专注于**优质干羊肚菌国际贸易**的创新型企业。我们建立了严格的**三阶段品控体系**，拥有**SC、HACCP、ISO 22000国际认证**，正在研发**Morchella-AI智能分级系统**，为全球客户提供100%透明可靠的高端农产品。
+- [配置指南](./CONFIGURATION_GUIDE.md)
+- [快速参考](./QUICK_REFERENCE.md)
+- [项目检查清单](./PROJECT_CHECKLIST.md)
+- [图片说明](./public/images/README.md)
 
-**Sichuan New Shi Long Technology Co., Ltd.** specializes in **international trade of premium dried Morel Mushrooms**. We have established a rigorous **Three-Stage Quality Control System**, hold **SC, HACCP, ISO 22000 International Certifications**, and are developing the **Morchella-AI Intelligent Grading System** to provide 100% transparent and reliable premium agricultural products to global customers.
-
----
-
-## ✨ 核心特色 | Key Features
-
-### 🌍 **中英文双语支持 | Bilingual Support**
-- 一键切换中英文界面
-- 完整的双语内容支持
-- One-click language switching
-- Complete bilingual content support
-
-### 🎨 **专业设计 | Professional Design**
-- 绿色主题体现自然健康 | Green theme reflecting natural health
-- 响应式布局完美适配各设备 | Responsive layout for all devices
-- 流畅的动画效果 | Smooth animations with Framer Motion
-- 现代化的用户体验 | Modern user experience
-
-### 💎 **完整内容架构 | Complete Content Structure**
-- **首页** | Homepage - 品牌介绍与核心价值
-- **关于我们** | About Us - 公司历史与使命愿景
-- **核心团队** | Core Team - 专业团队展示
-- **优势与服务** | Services - 四大核心竞争力
-- **成功案例** | Case Studies - 实际项目展示
-- **联系我们** | Contact Us - 多渠道联系方式
+> 小贴士：网站所有文案位于 `src/data/companyData.json`；favicon 配置在 `src/app/layout.tsx`。
 
 ---
 
-## 🚀 快速开始 | Quick Start
+## 📋 目录
 
-### 环境要求 | Prerequisites
-- Node.js 18.0 或更高版本 | Node.js 18.0 or higher
-- npm 或 yarn 或 pnpm
+1. [项目概览](#-项目概览)
+2. [快速开始](#-快速开始)
+3. [项目结构](#-项目结构)
+4. [核心特性](#-核心特性)
+5. [技术栈](#️-技术栈)
+6. [内容管理](#-内容管理)
+7. [部署说明](#-部署说明)
+8. [常见问题](#-常见问题)
+9. [联系方式](#-联系方式)
 
-### 安装 | Installation
+---
 
+## 🎯 项目概览
+
+- **公司名称**：四川省煜轩财税咨询有限公司  
+- **定位**：资深财税顾问 + 自研智能工具  
+- **使命**：让每一次财税决策更稳妥、可追溯  
+- **业务场景**：税务筹划与合规、财务共享与智能记账、发票风控与监测、数字化财税培训  
+- **网站风格**：科技感渐变 + 稳重文案，突出“智能财税”主题
+
+---
+
+## 🚀 快速开始
+
+### 环境要求
+- Node.js 18+
+- npm 或 pnpm
+
+### 开发流程
 ```bash
-# 克隆仓库 | Clone repository
-git clone https://github.com/ethanone/scxingshilong.com.git
-cd scxingshilong.com
-
-# 安装依赖 | Install dependencies
+git clone https://github.com/ethanone/uumi.net.git
+cd uumi-ai-site
 npm install
-
-# 启动开发服务器 | Start development server
-npm run dev
+npm run dev   # 浏览器访问 http://localhost:3000
 ```
 
-访问 `http://localhost:3000` 查看网站 | Visit `http://localhost:3000` to view the site
-
-### 构建生产版本 | Build for Production
-
+### 构建与部署
 ```bash
-# 构建 | Build
 npm run build
-
-# 启动生产服务器 | Start production server
-npm start
+npm run start
 ```
 
 ---
 
-## 📁 项目结构 | Project Structure
+## 📁 项目结构
 
 ```
-scxsl-ai-site/
-├── public/                    # 静态资源
-│   ├── scxsl-logo.png        # 公司Logo
-│   └── images/               # 图片资源
+yuxuan-tax.cn/
 ├── src/
-│   ├── app/                  # Next.js App Router
-│   │   ├── layout.tsx        # 根布局 + SEO配置
-│   │   ├── page.tsx          # 主页面组件
-│   │   └── globals.css       # 全局样式 + 配色方案
-│   ├── components/           # UI组件库
-│   │   └── ui/              # shadcn/ui组件
-│   ├── contexts/            # React上下文
-│   │   └── LanguageContext.tsx  # 语言切换上下文
-│   ├── data/                # 数据文件
-│   │   ├── companyData.json     # 中文数据
-│   │   └── companyData.en.json  # 英文数据
-│   └── lib/                 # 工具函数
-└── package.json             # 项目配置
+│   ├── app/                 # Next.js App Router
+│   │   ├── globals.css      # 品牌配色 & 科技感样式
+│   │   ├── layout.tsx       # SEO / Favicon / 字体配置
+│   │   └── page.tsx         # 单页官网
+│   ├── components/ui/       # 按钮、卡片等 UI 基础件
+│   └── data/companyData.json# 公司数据（文字、案例）
+├── public/                  # 图片与静态资源
+└── README.md                # 本文档
 ```
 
 ---
 
-## 🎯 核心功能 | Core Functions
+## 🌟 核心特性
 
-### 三阶段品控体系 | Three-Stage Quality Control
-1. **农场源头** | Farm Source - 源头准入与筛选
-2. **加工车间** | Processing - 精选分级与安全处理
-3. **装运前** | Pre-shipment - 最终复核与AQL抽检
-
-### 国际认证 | International Certifications
-- 🏆 **SC** - 食品生产许可证 | Food Production License
-- 🏆 **HACCP** - 危害分析与关键控制点 | Hazard Analysis and Critical Control Points
-- 🏆 **ISO 22000** - 食品安全管理体系 | Food Safety Management System
-
-### Morchella-AI 智能分级系统 | Intelligent Grading System
-- 🤖 **形态数字化** | Form Digitization - 3D结构光扫描
-- 🤖 **缺陷客观化** | Defect Detection - 高分辨率图像识别
-- 🤖 **色泽标准化** | Color Standardization - 色谱分析
+- 配置化文案：修改 `companyData.json` 即可切换品牌信息
+- 纯 CSS 科技感视觉 + Framer Motion 细腻动效
+- Tailwind CSS 4 + Radix UI 构建统一设计体系
+- SEO / OpenGraph / DNS Prefetch 预置到位
+- 移动优先布局，突出 Hero、服务、案例、联系四大板块
+- 支持删减模块：数组为空时自动收起对应区域
 
 ---
 
-## 🔧 配置与定制 | Configuration & Customization
+## 🛠️ 技术栈
 
-### 修改内容 | Modify Content
-编辑数据文件以更新网站内容 | Edit data files to update website content:
-- **中文**: `src/data/companyData.json`
-- **English**: `src/data/companyData.en.json`
-
-### 修改配色 | Modify Colors
-编辑 `src/app/globals.css` 中的颜色变量 | Edit color variables in `src/app/globals.css`:
-- **主色** | Primary: `#059669` (深绿色 | Deep Green)
-- **辅色** | Secondary: `#1E40AF` (深蓝色 | Deep Blue)
-- **点缀** | Accent: `#F59E0B` (金色 | Gold)
-
-### 修改SEO | Modify SEO
-编辑 `src/app/layout.tsx` 中的 metadata | Edit metadata in `src/app/layout.tsx`
+- **框架**：Next.js 15、React 19、TypeScript 5
+- **样式**：Tailwind CSS 4、Radix UI、Framer Motion、Lucide Icons
+- **质量**：ESLint 9、PostCSS、严格类型检查
+- **性能**：静态站点生成（SSG）、现代图片格式、长缓存策略
 
 ---
 
-## 💼 联系信息 | Contact Information
+## 🧩 内容管理
 
-### 四川新石龙科技有限公司 | Sichuan New Shi Long Technology Co., Ltd.
+| 内容 | 配置位置 | 说明 |
+|------|----------|------|
+| 公司信息 / 使命愿景 | `companyData.json` → `companyInfo / aboutUs` | 文字、口号、联系方式 |
+| 服务与优势 | `focusAreas / coreAdvantages` | 支持任意条目 |
+| 案例展示 | `caseStudies` | 每例含标题、场景、技术亮点 |
+| 团队信息 | `team` | 若要精简，可删除 `leadership` 项 |
+| 联系方式 | `contact` | 电话、邮箱、地址等 |
+| SEO 元信息 | `src/app/layout.tsx` → `metadata` | 记得同步域名、关键词 |
+| 品牌配色 | `src/app/globals.css` | 渐变、按钮、网格等样式 |
 
-- 📧 **邮箱 | Email**: uj.zhou@foxmail.com
-- 📧 **备用邮箱 | Secondary**: carolynne0618@gmail.com
-- 📞 **电话 | Phone**: +86 138 0000 0000 *(需更新 | Need to update)*
-- 📍 **地址 | Address**: 中国四川省成都市 | Chengdu, Sichuan, China
-- 🌐 **网站 | Website**: www.newshilong.com
-- ⏰ **工作时间 | Hours**: 周一至周五 9:00-18:00 (GMT+8) | Monday-Friday 9:00-18:00 (GMT+8)
-
-### 服务内容 | Services
-
-✅ 索取样品套件（特级、A级、B级 + 价格表）  
-✅ Request Sample Kit (Special, Grade A, Grade B + Price List)
-
-✅ 垂询供应与定制方案  
-✅ Supply Inquiry & Custom Solutions
-
-✅ 索取证书文档（SC/HACCP/ISO 22000）  
-✅ Request Certificate Documents (SC/HACCP/ISO 22000)
-
-✅ 预约工厂参观与质量审核  
-✅ Schedule Factory Visit & Quality Audit
+> 想要更简洁的页面？把不需要的数组清空即可，组件会自动隐藏。
 
 ---
 
-## 📊 产品分级 | Product Grading
+## 🚀 部署说明
 
-基于中国国家农业行业标准 **NY/T 4344-2023** | Based on Chinese National Agricultural Standard **NY/T 4344-2023**
-
-| 等级 Grade | 缺陷率 Defect | 应用场景 Application |
-|:---:|:---:|:---|
-| **特级 Special** | 0% | 高端餐饮、精品零售 \| High-end dining, Premium retail |
-| **A级 Grade A** | ≤10% | 商业餐饮、一般零售 \| Commercial dining, General retail |
-| **B级 Grade B** | ≤15% | 汤料、萃取、加工 \| Soup, Extract, Processing |
-
----
-
-## 🛠️ 技术栈 | Tech Stack
-
-- **框架 | Framework**: Next.js 15.3.5 (App Router)
-- **UI库 | UI Library**: React 19.0
-- **语言 | Language**: TypeScript 5.0
-- **样式 | Styling**: Tailwind CSS 4.0
-- **组件 | Components**: shadcn/ui + Radix UI
-- **动画 | Animation**: Framer Motion 12.23
-- **图标 | Icons**: Lucide React
-
----
-
-## 📝 开发指南 | Development Guide
-
-### 添加新内容 | Add New Content
-1. 在 `companyData.json` 和 `companyData.en.json` 中添加数据
-2. 网站将自动显示新内容
-3. Add data to both `companyData.json` and `companyData.en.json`
-4. The website will automatically display new content
-
-### 添加新页面 | Add New Page
-1. 在 `src/app/` 中创建新文件夹
-2. 创建 `page.tsx` 文件
-3. Create a new folder in `src/app/`
-4. Create a `page.tsx` file
-
-### 添加新组件 | Add New Component
-1. 在 `src/components/` 中创建新组件
-2. 在需要的地方导入使用
-3. Create new component in `src/components/`
-4. Import and use where needed
+1. **推送代码**
+   ```bash
+   git add .
+   git commit -m "feat: update yuxuan branding"
+   git push origin main
+   ```
+2. **Vercel 部署**
+   - 登录 [vercel.com](https://vercel.com)，导入仓库
+   - 框架自动识别，保持默认 `npm run build`
+   - 部署成功后可绑定自定义域名
+3. **DNS 建议**
+   ```
+   A     @    76.76.21.21
+   CNAME www  cname.vercel-dns.com
+   ```
+4. **环境变量（如需）**
+   ```env
+   NEXT_PUBLIC_SITE_URL=https://www.yuxuantax.cn
+   ```
 
 ---
 
-## 🎨 配色说明 | Color Scheme
+## 🛠️ 常见问题
 
-### 主色调 | Primary Colors
-专业的农产品贸易形象 | Professional agricultural trade image
+**Q1：如何替换公司文案？**  
+在 `src/data/companyData.json` 中修改对应字段后重新部署即可。
 
-- 🟢 **深绿色** #059669 - 自然、健康、农业 | Natural, Healthy, Agricultural
-- 🟢 **翠绿色** #10B981 - 生机、品质、成长 | Vitality, Quality, Growth
+**Q2：想缩短页面内容？**  
+删除 `focusAreas`、`team.leadership` 等数组元素，UI 会自动收起。
 
-### 辅助色 | Secondary Colors
-信任与科技的结合 | Combination of trust and technology
+**Q3：SEO 信息在哪里设置？**  
+`src/app/layout.tsx` 的 `metadata` 中可配置标题、描述、关键词与域名。
 
-- 🔵 **深蓝色** #1E40AF - 专业、信任、可靠 | Professional, Trust, Reliable
-- 🔵 **亮蓝色** #3B82F6 - 科技、创新、现代 | Technology, Innovation, Modern
-
-### 点缀色 | Accent Color
-高端品质的象征 | Symbol of premium quality
-
-- 🟡 **金色** #F59E0B - 优质、高端、价值 | Premium, High-end, Value
+**Q4：Logo 暂时没有？**  
+`public/uumi-logo.png` 目前是占位图，可直接替换成正式 Logo 并保持同名。
 
 ---
 
-## 📄 许可证 | License
+## 📞 联系方式
 
-Copyright © 2023-2025 四川新石龙科技有限公司 | Sichuan New Shi Long Technology Co., Ltd.
-
-All rights reserved. 保留所有权利。
-
----
-
-## 🤝 贡献 | Contributing
-
-欢迎提交问题和拉取请求！  
-Issues and pull requests are welcome!
+- **公司**：四川省煜轩财税咨询有限公司  
+- **电话**：17364521649  
+- **邮箱**：hello@yuxuantax.cn  
+- **地址**：中国(四川)自由贸易试验区成都市天府新区华阳街道海昌路169号18栋1层9号  
+- **官网**：www.yuxuantax.cn
 
 ---
 
-<div align="center">
+## 📝 许可证
 
-**新石龙科技 - 诚信 · 质量 · 科技**  
-**New Shi Long Tech - Integrity · Quality · Technology**
+本项目为四川省煜轩财税咨询有限公司所有，保留所有权利。
 
-Made with ❤️ in Chengdu, China
+---
 
-</div>
+*最后更新：2025年1月8日 · v1.2.0*
