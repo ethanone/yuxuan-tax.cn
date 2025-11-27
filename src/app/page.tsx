@@ -114,12 +114,7 @@ const Navigation = memo(() => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - 全新设计 */}
           <a href="#home" className="flex items-center space-x-3 group">
-            {/* Logo 图标 */}
-            <div className="relative">
-              <CompanyLogo className="w-12 h-12 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-lg" />
-            </div>
-            
-            {/* Logo 文字 */}
+            {/* Logo 文字（无图片） */}
             <div className="relative">
               <h1 className="text-2xl font-black tracking-tight bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                 煜轩财税
