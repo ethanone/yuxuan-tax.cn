@@ -67,21 +67,21 @@
     }
   ],
   "team": {
-    "intro": "核心顾问团队由注册税务师与财务运营合伙人组成，聚焦“政策洞察 + 数字化落地”的组合服务。",
+    "intro": "核心顾问团队由注册税务师与财务运营合伙人组成，聚焦「政策洞察 + 数字化落地」的组合服务。",
     "leadership": [
       {
-        "name": "李春梅",
-        "title": "首席税务顾问",
-        "avatar": "/images/team/lichumei.jpg",
+        "name": "首席税务顾问",
+        "title": "注册税务师",
+        "avatar": "/images/team/advisor-1.jpg",
         "education": "注册税务师 · 工商管理硕士",
-        "background": "注册税务师，15年西南企业税务筹划经验，擅长制造业与新能源项目落地。",
+        "background": "15年西南企业税务筹划经验，擅长制造业与新能源项目落地。",
         "expertise": ["税务筹划", "政策解读", "合规设计"]
       },
       {
-        "name": "曾丹",
-        "title": "运营合伙人",
-        "avatar": "/images/team/zengdan.jpg",
-        "education": "企业管理与心理学双硕士",
+        "name": "运营合伙人",
+        "title": "财务共享专家",
+        "avatar": "/images/team/advisor-2.jpg",
+        "education": "企业管理硕士",
         "background": "长期负责财务共享与内控体系建设，熟悉票据、合同、费用的数字化流程。",
         "expertise": ["共享财务", "流程治理", "风险控制"]
       }
