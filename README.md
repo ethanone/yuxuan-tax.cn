@@ -155,7 +155,7 @@ yuxuan-tax.cn/
 `src/app/layout.tsx` 的 `metadata` 中可配置标题、描述、关键词与域名。
 
 **Q4：Logo 暂时没有？**  
-`public/uumi-logo.png` 目前是占位图，可直接替换成正式 Logo 并保持同名。
+`public/yuxuan-logo.svg` 目前是占位图，可直接替换成正式 Logo 并保持同名。
 
 ---
 

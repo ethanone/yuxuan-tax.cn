@@ -1,8 +1,8 @@
 {
-  "name": "newshilong-tech-site",
+  "name": "yuxuan-tax-site",
   "version": "1.0.0",
   "private": true,
-  "description": "新石龙科技 (New Shi Long Tech) - 优质羊肚菌全球贸易商 | Premium Morel Mushrooms International Trade",
+  "description": "四川省煜轩财税咨询有限公司官网 - 智能财税服务 | Sichuan Yuxuan Tax Consulting Co., Ltd.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

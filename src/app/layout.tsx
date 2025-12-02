@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   keywords: ["财税咨询", "智能财税", "税务筹划", "发票风控", "财务共享", "四川省煜轩财税咨询有限公司", "煜轩财税"],
   authors: [{ name: "Sichuan Yuxuan Tax Consulting Co., Ltd." }],
   icons: {
-    icon: "/uumi-logo.png",
-    shortcut: "/uumi-logo.png",
-    apple: "/uumi-logo.png",
+    icon: "/yuxuan-logo.svg",
+    shortcut: "/yuxuan-logo.svg",
+    apple: "/yuxuan-logo.svg",
   },
   openGraph: {
     title: "四川省煜轩财税咨询有限公司 · 智能财税服务",

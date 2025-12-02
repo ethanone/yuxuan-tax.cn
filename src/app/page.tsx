@@ -80,11 +80,11 @@ const Section = memo(({ children, className = "", id }: {
 ));
 Section.displayName = "Section";
 
-// Logo 组件 - 目前使用通用占位图
+// Logo 组件 - 使用 SVG logo
 const CompanyLogo = memo(({ className = "w-12 h-12" }: { className?: string }) => (
   <div className={className}>
     <Image
-      src="/uumi-logo.png"
+      src="/yuxuan-logo.svg"
       alt="煜轩财税 Logo"
       width={48}
       height={48}
@@ -670,7 +670,7 @@ const Footer = memo(() => (
         <div>
           <div className="flex items-center space-x-3 mb-4">
             <Image
-              src="/uumi-logo.png"
+              src="/yuxuan-logo.svg"
               alt="煜轩财税 Logo"
               width={44}
               height={44}
